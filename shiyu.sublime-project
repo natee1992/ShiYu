@@ -1,0 +1,21 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"/Users/Natee/demo_project/own/ShiYu/env/bin/python3\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "shiyu"
+		}
+	],
+	"settings":
+	{
+		"python_interpreter": "/Users/Natee/demo_project/own/ShiYu/env/bin/python3"
+	}
+}

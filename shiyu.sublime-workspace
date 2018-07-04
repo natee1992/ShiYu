@@ -1,0 +1,1313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"install_as_MySQLdb\tfunction"
+			],
+			[
+				"v",
+				"viewsets"
+			],
+			[
+				"C",
+				"CreateAPIView\tclass"
+			],
+			[
+				"u",
+				"urls\tfunction"
+			],
+			[
+				"r",
+				"router\tinstance"
+			],
+			[
+				"Sh",
+				"ShiYuSerializer\tclass"
+			],
+			[
+				"se",
+				"serializer_class\tstatement"
+			],
+			[
+				"M",
+				"ModelViewSet\tclass"
+			],
+			[
+				"vi",
+				"viewsets\tmodule"
+			],
+			[
+				"S",
+				"SerializerMetaclass\tclass"
+			],
+			[
+				"s",
+				"serializers\tmodule"
+			],
+			[
+				"re",
+				"rest_framework\tmodule"
+			],
+			[
+				"a",
+				"auth\tmodule"
+			],
+			[
+				"B",
+				"BASE_DIR\tstatement"
+			],
+			[
+				"in",
+				"insert\tfunction"
+			],
+			[
+				"he",
+				"help_text\tparam"
+			],
+			[
+				"mi",
+				"mint\tIntegerField (mint)"
+			],
+			[
+				"R",
+				"Register\tclass"
+			],
+			[
+				"n",
+				"not_auitenticated\tfunction"
+			],
+			[
+				"con",
+				"contrib\tmodule"
+			],
+			[
+				"p",
+				"permission_refused\tfunction"
+			],
+			[
+				"j",
+				"json\tmodule"
+			],
+			[
+				"ur",
+				"urlpatterns\tstatement"
+			],
+			[
+				"D",
+				"DEBUG\tinstance"
+			],
+			[
+				"me",
+				"method_not_allowed\tfunction"
+			],
+			[
+				"o",
+				"object\tclass"
+			],
+			[
+				"ut",
+				"utils\tmodule"
+			],
+			[
+				"add",
+				"add_time\tstatement"
+			],
+			[
+				"co",
+				"comment\tstatement"
+			],
+			[
+				"c",
+				"comments\tstatement"
+			],
+			[
+				"us",
+				"user_comment\tstatement"
+			],
+			[
+				"sh",
+				"ShoppingHistory\tclass"
+			],
+			[
+				"shopp",
+				"shopping_history\tstatement"
+			],
+			[
+				"shop",
+				"shopping_history_id\tstatement"
+			],
+			[
+				"Shoppi",
+				"ShoppingHistory\tclass"
+			],
+			[
+				"user",
+				"userinfo_permission\tfunction"
+			],
+			[
+				"ad",
+				"add_time"
+			],
+			[
+				"dta",
+				"datetime\tclass"
+			],
+			[
+				"st",
+				"state"
+			],
+			[
+				"def",
+				"default\tparam"
+			],
+			[
+				"Shopp",
+				"ShoppingHistory\tclass"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"order",
+				"orders\tstatement"
+			],
+			[
+				"Fo",
+				"ForeignKey\tclass"
+			],
+			[
+				"go",
+				"good_id\tstatement"
+			],
+			[
+				"all",
+				"all_data\tstatement"
+			],
+			[
+				"ord",
+				"order\tstatement"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"usein",
+				"userinfo_permission\tfunction"
+			],
+			[
+				"F",
+				"False\tkeyword"
+			],
+			[
+				"U",
+				"UserFav\tclass"
+			],
+			[
+				"t",
+				"total_price"
+			],
+			[
+				"Shop",
+				"ShoppingCatDetail\tclass"
+			],
+			[
+				"Sho",
+				"ShoppingCatDetail\tclass"
+			],
+			[
+				"goo",
+				"good\tstatement"
+			],
+			[
+				"E",
+				"Exception\tclass"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"P",
+				"PUT"
+			],
+			[
+				"w",
+				"wallet"
+			],
+			[
+				"b",
+				"banlance"
+			],
+			[
+				"Pu",
+				"PUT"
+			],
+			[
+				"ca",
+				"category_desc\tstatement"
+			],
+			[
+				"cat",
+				"category\tstatement"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"dat",
+				"datetime\tclass"
+			],
+			[
+				"cate",
+				"category_data\tstatement"
+			],
+			[
+				"atu",
+				"auto_now\tparam"
+			],
+			[
+				"Da",
+				"DateTimeField\tclass"
+			],
+			[
+				"Se",
+				"SessionCodeResource\tclass"
+			],
+			[
+				"js",
+				"json_response\tfunction"
+			],
+			[
+				"get",
+				"getattr\tfunction"
+			],
+			[
+				"not",
+				"not_authenticated\tfunction"
+			],
+			[
+				"no",
+				"not_authenticated\tfunction"
+			],
+			[
+				"usr",
+				"userinfo\tstatement"
+			],
+			[
+				"l",
+				"login\tfunction"
+			],
+			[
+				"e",
+				"errors\tstatement"
+			],
+			[
+				"A",
+				"Api"
+			],
+			[
+				"ra",
+				"random\tstatement"
+			],
+			[
+				"moe",
+				"models\tmodule"
+			],
+			[
+				"mti",
+				"mdatetime\tDateTimeField (mdatetime)"
+			],
+			[
+				"mt",
+				"mdatetime\tDateTimeField (mdatetime)"
+			],
+			[
+				"ch",
+				"choices"
+			],
+			[
+				"for",
+				"for\tkeyword"
+			],
+			[
+				"obj",
+				"objs\tstatement"
+			],
+			[
+				"cre",
+				"create_time\tstatement"
+			],
+			[
+				"creat",
+				"create_time"
+			],
+			[
+				"if",
+				"if\tkeyword"
+			],
+			[
+				"str",
+				"start_id\tstatement"
+			],
+			[
+				"sta",
+				"state\tstatement"
+			],
+			[
+				"m",
+				"models\tmodule"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"ma",
+				"marks"
+			],
+			[
+				"mark",
+				"mark_ids\tstatement"
+			],
+			[
+				"f",
+				"filter"
+			],
+			[
+				"qu",
+				"quantity\tstatement"
+			],
+			[
+				"de",
+				"deadline"
+			],
+			[
+				"tim",
+				"timedelta\tclass"
+			],
+			[
+				"dead",
+				"deadline_str\tstatement"
+			],
+			[
+				"quest",
+				"Questionnaire\tclass"
+			],
+			[
+				"q",
+				"Questionnaire\tclass"
+			],
+			[
+				"Q",
+				"Questionnaire\tclass"
+			],
+			[
+				"MI",
+				"MiddlewareMixin\tclass"
+			],
+			[
+				"MU",
+				"MultiPartParser\tclass"
+			],
+			[
+				"du",
+				"dumps\tfunction"
+			],
+			[
+				"ren",
+				"return\tkeyword"
+			],
+			[
+				"lg",
+				"logout\tfunction"
+			],
+			[
+				"rq",
+				"request"
+			],
+			[
+				"fi",
+				"files\tstatement"
+			],
+			[
+				"pa",
+				"params_errors\tfunction"
+			],
+			[
+				"set",
+				"setattr\tfunction"
+			],
+			[
+				"mu",
+				"multipartparser\tmodule"
+			],
+			[
+				"h",
+				"http\tmodule"
+			],
+			[
+				"cs",
+				"csrf_exempt\tfunction"
+			],
+			[
+				"User",
+				"UserInfo\tclass"
+			],
+			[
+				"d",
+				"decorators\tmodule"
+			],
+			[
+				"log",
+				"login_user\tfunction"
+			],
+			[
+				"lgo",
+				"login_page\tfunction"
+			],
+			[
+				"验证",
+				"验证用户上传数据"
+			],
+			[
+				"userin",
+				"userinfo\tstatement"
+			],
+			[
+				"ses",
+				"session_regist_code\tstatement"
+			],
+			[
+				"en",
+				"ensure_password\tstatement"
+			],
+			[
+				"di",
+				"dict\tclass"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"sl",
+				"solid"
+			],
+			[
+				"regi",
+				"regist_code"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "shiyu/shiyu/settings.py",
+			"settings":
+			{
+				"buffer_size": 3584,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/shiyu/__init__.py",
+			"settings":
+			{
+				"buffer_size": 45,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/Api/serializers.py",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/shiyu/urls.py",
+			"settings":
+			{
+				"buffer_size": 1082,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/Api/views.py",
+			"settings":
+			{
+				"buffer_size": 605,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/apps/Notes/models.py",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/apps/Users/views.py",
+			"settings":
+			{
+				"buffer_size": 64,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/apps/Users/tests.py",
+			"settings":
+			{
+				"buffer_size": 60,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/apps/Operate/models.py",
+			"settings":
+			{
+				"buffer_size": 408,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shiyu/apps/__init__.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pkr",
+		"selected_items":
+		[
+			[
+				"pkr",
+				"Package Control: Remove Package"
+			],
+			[
+				"pki",
+				"Package Control: Install Package"
+			],
+			[
+				"gitp",
+				"Git: Push"
+			],
+			[
+				"gita",
+				"Git: Add Remote"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"gitci",
+				"Git: Quick Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"gitstau",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"k",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"pk",
+				"Package Control: Install Package"
+			],
+			[
+				"p k",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Natee/demo_project/own/ShiYu/shiyu",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/Api",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/apps",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/apps/Notes",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/apps/Operate/migrations",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/apps/Users",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/shiyu"
+	],
+	"file_history":
+	[
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/apps/Users/models.py",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/Api/views.py",
+		"/Users/Natee/demo_project/own/ShiYu/env/lib/python3.6/site-packages/rest_framework/viewsets.py",
+		"/Users/Natee/demo_project/own/ShiYu/env/lib/python3.6/site-packages/rest_framework/generics.py",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/shiyu/urls.py",
+		"/Users/Natee/demo_project/own/ShiYu/env/lib/python3.6/site-packages/rest_framework/mixins.py",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu/Api/urls.py",
+		"/Users/Natee/demo_project/own/ShiYu/shiyu.sublime-project",
+		"/Users/Natee/Desktop/urllib课件.md",
+		"/Users/Natee/project/sublime/shiyu.sublime-project",
+		"/Users/Natee/demo_project/own/shoppp/shoppp/urls.py",
+		"/Users/Natee/demo_project/own/shoppp/Api/urls.py",
+		"/Users/Natee/demo_project/own/shoppp/Users/views.py",
+		"/Users/Natee/demo_project/own/shoppp/Middlewares/middleware.py",
+		"/Users/Natee/demo_project/own/shoppp/Api/decorators.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/Natee/demo_project/own/shoppp/Api/utils.py",
+		"/Users/Natee/demo_project/own/shoppp/shoppp/__init__.py",
+		"/Users/Natee/project/sublime/shoppp.sublime-project",
+		"/Users/Natee/demo_project/own/QuestionTest/Api/utils.py",
+		"/Users/Natee/demo_project/own/QuestionTest/Api/urls.py",
+		"/Users/Natee/demo_project/own/QuestionTest/Middlewares/copy.py",
+		"/Users/Natee/demo_project/own/QuestionTest/QuestionTest/settings.py",
+		"/Users/Natee/demo_project/own/QuestionTest/Api/decorators.py",
+		"/Users/Natee/demo_project/own/QuestionTest/Api/comment.py",
+		"/Users/Natee/demo_project/own/QuestionTest/Question/models.py",
+		"/Users/Natee/project/sublime/QuestionTest.sublime-project",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Anaconda/Default (OSX).sublime-keymap",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Anaconda/README.md",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Natee/demo_project/own/QuestionTest/Api/resources.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/Natee/demo_project/own/QuestionTest/Middlewares/middleware.py",
+		"/Users/Natee/workspace/ShopEnv/lib/python3.6/site-packages/django/contrib/auth/models.py",
+		"/Users/Natee/workspace/ShopEnv/lib/python3.6/site-packages/django/http/multipartparser.py",
+		"/Users/Natee/demo_project/learn/QuestionNaire/Question/models.py",
+		"/Users/Natee/project/sublime/qustionnaire.sublime-project",
+		"/Users/Natee/workspace/ShopEnv/lib/python3.6/site-packages/django/http/response.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Anaconda/LICENSE",
+		"/Users/Natee/demo_project/learn/QuestionNaire/templates/user/login_page.html",
+		"/Users/Natee/demo_project/learn/QuestionNaire/.idea/modules.xml",
+		"/Users/Natee/demo_project/learn/QuestionNaire/Api/__init__",
+		"/Users/Natee/project/sublime/question.sublime-project",
+		"/Users/Natee/demo_project/own/Shop_d/templates/product.html",
+		"/Users/Natee/project/sublime/shop_d_natee.sublime-project",
+		"/Users/Natee/demo_project/own/Shop_d/Operation/models.py",
+		"/Users/Natee/demo_project/own/Shop_d/users/models.py",
+		"/Users/Natee/demo_project/own/Shop_d/Product/models.py",
+		"/Users/Natee/demo_project/own/Shop_d/Operation/admin.py",
+		"/Users/Natee/demo_project/own/Shop_d/Product/admin.py",
+		"/Users/Natee/demo_project/own/Shop_d/users/admin.py",
+		"/Users/Natee/demo_project/own/Shop_d/Project/models.py",
+		"/Users/Natee/project/sublime/untitled.sublime-project",
+		"/Users/Natee/project/login_peiqi/templates/register.html",
+		"/Users/Natee/project/login_peiqi/templates/login.html",
+		"/Users/Natee/workspace/ShopEnv/lib/python3.6/site-packages/django/shortcuts.py",
+		"/Users/Natee/project/login_peiqi/Api/utils.py",
+		"/Users/Natee/project/login_peiqi/users/models.py",
+		"/Users/Natee/project/login_peiqi/users/urls.py",
+		"/Users/Natee/project/login_peiqi/users/apps.py",
+		"/Users/Natee/project/login_peiqi/login_peiqi/wsgi.py",
+		"/Users/Natee/project/login_peiqi/login_peiqi/urls.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/AutoPep8.sublime-settings",
+		"/Users/Natee/project/sublime/login_peiqi.sublime-project",
+		"/Users/Natee/.ssh/id_rsa.pub",
+		"/Users/Natee/demo_project/own/Shop_d/ls.pub",
+		"/Users/Natee/demo_project/learn/Shop/Api/utils.py",
+		"/Users/Natee/demo_project/learn/Shop/Api/resources.py",
+		"/Users/Natee/demo_project/learn/Shop/Api/common.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/Python (Django).sublime-settings",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/AutoPEP8/Default.sublime-keymap",
+		"/Users/Natee/demo_project/learn/Shop/Shop/urls.py",
+		"/Users/Natee/demo_project/learn/Shop/Market/views.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/Natee/project/untitled.py",
+		"/Users/Natee/Library/Application Support/Sublime Text 3/Packages/User/Shop_test.sublime-build"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"userinfo",
+			"查看登录状态",
+			"userindo",
+			"reqe",
+			"')\n",
+			"user",
+			"form",
+			"\n    ",
+			">\n",
+			"username",
+			"!",
+			"\t\telse:\n\t\t\treturn render(request, 'register.html', {})\n",
+			"!",
+			"def get(self, request, *args,**kwargs):\n        return HttpResponse('get request')"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "shiyu/shiyu/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3559,
+								3559
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1763.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "shiyu/shiyu/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "shiyu/Api/serializers.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "shiyu/shiyu/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								714,
+								714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "shiyu/Api/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "shiyu/apps/Notes/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								568,
+								563
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 73.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "shiyu/apps/Users/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 64,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "shiyu/apps/Users/tests.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "shiyu/apps/Operate/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "shiyu/apps/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-push":
+	{
+		"height": 100.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/User/Shop_test.sublime-build",
+	"project": "shiyu.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				".idea/modules.xml"
+			],
+			[
+				"vies",
+				"users/views.py"
+			],
+			[
+				"resourc",
+				"Api/Resource.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 67.0,
+		"last_filter": "re",
+		"selected_items":
+		[
+			[
+				"re",
+				"Register"
+			],
+			[
+				"r",
+				"Register"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"",
+				"Resource"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
