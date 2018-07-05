@@ -1,0 +1,68 @@
+
+.user{
+    width: 400px;
+    height: 50%;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+.bg{
+    background: url(/static/img/lu.png) no-repeat center top;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+*{
+    padding: 0;
+    margin: 0;
+    color:rgba(255,255,255,0.5);
+    font-family:monaco;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+input{
+    background: rgba(0,0,0,0);
+    border: 2px solid rgba(255,255,255,0.3);
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+.ch{
+    width: 50px;
+}
+p{
+    font-size: 26px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+label{
+    height: 60px;
+    display: inline-block;
+    margin-left: 10px ;
+}
+#submit{
+	width: 300px;
+	margin-left: 60px;
+    margin-top: 25px;
+}
+
+#submit:hover{
+	cursor:pointer;
+	background:rgba(0, 0, 0, 0.2) ;
+}
+.error{
+	border: 1px red solid;
+	box-shadow: 0 0 2px 2px #FF0000;
+ }

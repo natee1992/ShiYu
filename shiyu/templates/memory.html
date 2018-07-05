@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/static/css/memory_css/style.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="/static/css/memory_css/pikaday.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+</head>
+
+<body>
+<div class="main">
+    <!-----start-main---->
+    <h2 style="font-family:monaco;font-size: 22px">时&nbsp;&nbsp;&nbsp;&nbsp;域</h2>
+    <div class="inset">
+        <div class="social-icons">
+            <div class="span"><i> 时域是封闭空间，你可以将内容设定时间推入时域。每个单独的时域成功推入后，会生成钥匙串，除了时域拥有者，任何人均可通过钥匙串打开对应的时域。<br>
+                <span>tip：未到时域设定打开期限，即使时域的拥有者也无权打开。</span></i>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <form action="{% url 'memory' %}" method="post">
+        {% csrf_token %}
+        <div class="clear"></div>
+        <div class="lable-2" id="lable-2">
+            <input type="text" class="text" name="title" id="title" placeholder="添加标签，最多12个字符">
+            <textarea type="text" class="text" name="desc" id="desc"
+                      style="height: 100px;margin: 10px 0px;text-align: left;" placeholder="添加内容，最多300字"></textarea>
+            <input type="text" class="text" name="keep_time" id="datepicker" placeholder="点击选择时域打开时间，默认并至少从当前时间延期6个月" readonly="readonly">
+            <br>
+        </div>
+        <p id="msg" style="color: wheat;font-size: 23px;text-align: center"></p>
+        <p id="msg2" style="color: burlywood;font-size: 23px;text-align: center"></p>
+        <div class="clear"></div>
+        <h3>时间平等，珍惜过客{% if request.user.is_authenticated %} <a href="{% url 'userinfo' %}" id="person">返回个人中心</a>
+            &nbsp;{% endif %}</h3>
+        <div class="submit">
+            {% if request.user.is_authenticated %}
+                <input id="re" value="推入时域" type="submit">
+            {% else %}
+                <p id="login">未登录无权存入时域，请返回首页登录</p>
+            {% endif %}
+        </div>
+        <div class="clear"></div>
+    </form>
+    <!-----//end-main---->
+</div>
+<!-----start-copyright---->
+<div class="copy-right">
+    <p>natee.site<a href="{% url 'index' %}" target="_blank" title="时域">&nbsp;&nbsp;返回首页</a></p>
+</div>
+<!-----//end-copyright---->
+
+</body>
+</html>
+<script src="/static/js/pikaday.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+<script src="/static/js/memory_js/memory.js"></script>
+<script>
+    $('#re').click(function (e) {
+        e.preventDefault();
+        let title = $('#title').val();
+        let desc = $('#desc').val();
+        let keep_time = $('#datepicker').val().substring(4,);
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+        });
+        $.ajax({
+            type: 'POST',
+            url: '/memory/',
+            data: {
+                'title': title,
+                'desc': desc,
+                'keep_time': keep_time
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 200) {
+                    $('#msg').text('已经推入时域');
+                    $('#msg').css('color', 'wheat');
+                    $('#msg').css('font-size', '23px');
+                    $('#msg2').text('钥匙串：' + data.data['msg']);
+                    $('#lable-2').css('display', 'none');
+                    $('#re').css('display', 'none');
+                } else if (data.status == 203) {
+                    $('#msg').css('color', 'red');
+                    $('#msg').css('font-size', '16px');
+                    $('#msg').text(data.data['error']);
+                }
+            }
+        })
+    });
+</script>

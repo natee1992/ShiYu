@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{% static 'css/ass.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+       <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{% static 'js/ass.js' %}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin">
+          {% csrf_token %}
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">邮箱</label>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="请输入邮箱" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="输入密码" required>
+         <label for="inputPassword" class="sr-only">确认密码</label>
+        <input type="password" name="confirm" id="inputPassword" class="form-control" placeholder="确认密码" required>
+        <div class="checkbox">
+            <label for="inputPassword" class="sr-only">验证码</label>
+        <input type="text" id="inputPassword" class="form-control" name="code" required><span style="font-size: 20px">{{ code }}</span>
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+          <div id="error"></div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn">注册</button>
+
+      </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/asw.js' %}"></script>
+  </body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+<script>
+    let btn = document.getElementById('btn');
+    let error = document.getElementById('error');
+    $("#btn").click(function () {
+        let datas =$('form').serializeArray();
+        $.ajax({
+            url: "/register/",
+            type: "POST",
+            success:function (data) {
+                data = JSON.parse(data);
+                console.log(data)
+            },
+            error:function () {
+                console.log('failed')
+                console.log()
+            }
+        });
+    });
+
+
+    {#let xhr = new XMLHttpRequest();#}
+    {##}
+    {#let data = {#}
+    {##}
+    {#};#}
+    {#xhr.open("POST",'/register', true);#}
+    {#xhr.onreadystatechange = function () {#}
+    {#    if(xhr.readyState ==4 && xhr.status == 200){#}
+    {##}
+    {#    }#}
+    {#}#}
+    {#xhr.send(data)#}
+
+</script>

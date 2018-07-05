@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if request.user.is_authenticated %}
+<form action="" method="post">
+    {% csrf_token %}
+    网站名：<input type="text" name="web_name"> <br>
+    用户名： <input type="text" name="web_username"> <br>
+    密码: <input type="text" name="web_password"> <br>
+    <button type="submit">存储</button>
+    <div>{{ msg }}</div>
+    {% else %}
+    <p>没有登录</p>
+    <p><a href="{% url 'index' %}">返回</a></p>
+    {% endif %}
+<hr>
+<div>
+    <button id="btn">查看所有记录</button>
+</div>
+
+<div style="display: none" id="msg">
+    <ul>
+        {% for code in codes %}
+            <li>
+                网站名: {{ code.web_name }}
+                用户名: {{ code.web_username }}
+                密码: {{ code.web_password }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+</form>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+<script>
+    $('#btn').click(function (e) {
+        e.preventDefault();
+        $('#msg').css('display','block');
+    })
+</script>

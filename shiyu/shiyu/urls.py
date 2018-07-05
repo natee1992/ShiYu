@@ -23,6 +23,9 @@ from rest_framework_jwt.views import obtain_jwt_token
 from Api.urls import router
 from Users.views import CodeView
 
+
+from django.views.generic.base import TemplateView
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
@@ -30,5 +33,9 @@ urlpatterns = [
     # url(r'^api-token-auth/', views.obtain_auth_token),
     #jwt的认证接口
     url(r'^login/', obtain_jwt_token),
-    url(r'^code/',CodeView.as_view())
+    url(r'^code/',CodeView.as_view()),
+#-----------------------------------------------------------------------------------
+    url(r'',TemplateView.as_view(template_name='index.html'),name='index'),
+    url(r'search/',TemplateView.as_view(template_name='search.html'),name='search'),
+    url(r'userinfo/',TemplateView.as_view(template_name='userinfo.html'),name='userinfo'),
 ]

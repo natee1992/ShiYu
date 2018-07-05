@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时域</title>
+    <style>
+        *{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hi {{ username }}</p>
+<p><a href="{% url 'index' %}">返回首页</a></p>
+    <p id="msg"></p>
+    <hr>
+
+            <ul>
+            {% for note in notes %}
+                <form action="{% url 'userinfo' %}" method="post">
+        {% csrf_token %}
+                <li>时域标题：{{ note.title }}</li>
+                <li>时域打开码：{{ note.open_code }}</li>
+                <li>时域存入时间：{{ note.create_time }}</li>
+                <li>时域打开时间：{{ note.keep_time }}</li>
+                <button type="button" onclick="send('{{ note.id }}')" name="{{ note.id }}">打开此时域</button>
+                <hr>
+                 </form>
+            {% endfor %}
+            </ul>
+
+<p>{{ msg }}</p>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+<script>
+    function send(e){
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+        });
+        $.ajax({
+            type: 'POST',
+            url: '/userinfo/',
+            data: {
+                'pid': e
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 200) {
+                    $('#msg').text('时域内容：'+data.data['msg'])
+                } else if (data.status == 203) {
+                    $('#msg').css('color','red');
+                    $('#msg').text(data.data['error'])
+                }else if(data.status == 204){
+                    $('#msg').css('color','red');
+                    $('#msg').text('无权访问时域，时域打开时间为：'+data.data['msg']);
+                }
+            }
+        })
+    };
+</script>

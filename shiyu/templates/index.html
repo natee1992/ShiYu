@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>时域</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+{#		<link rel="shortcut icon" href="images/favicon.ico">#}
+ 
+		<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="/static/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/static/css/index_css/animations.css" rel="stylesheet">
+		<link href="/static/css/index_css/style.css" rel="stylesheet">
+        <style>
+    #count{
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-background-size: 200% 100%;
+        -webkit-animation: masked-animation 4s infinite linear;
+      }
+    @-webkit-keyframes masked-animation {
+         0%{ background-position: 0 0;}
+         100% { background-position: -100% 0;}
+    }
+        </style>
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="http://www.natee.site"><img id="logo" src="/static/images/logo.png" alt="Worthy" style="margin-top: 18px"></a>
+							</div>
+
+							<!-- name-and-slogan -->
+							<div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner" style="font-size:24px"></a></div>								
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="{% url 'search' %}">钥匙串</a></li>
+                                                {% if request.user.is_authenticated %}
+                                                    <li><a href="{% url 'userinfo' %}">个人中心</a></li>
+                                                    <li><a href="#about">账号管理</a></li>
+                                                    <li><a href="">注销</a></li>
+                                                {% else %}
+                                                    <li><a data-toggle="modal" data-target="#login" href="">登录</a></li>
+                                                    <li><a data-toggle="modal" data-target="#register" href="" onclick="cd()">注册</a></li>
+                                                {% endif %}
+												<li><a href="#contact">反馈</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		<!-- 注册窗口 -->
+    <div id="register" class="modal fade"  tabindex="-1">
+        <div class="modal-dialog" style="opacity:0.8">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="" method="post" name="register-form">
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com" name="email" id="r_emial">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字" name="password" id="r_password">
+                            </div>
+                            <div class="form-group">
+                                <label for="">确认密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字" name="confirm" id="r_confrim">
+                            </div>
+                            <div class="form-group">
+                                <label for="">验证码</label>
+                                <input class="form-control" type="text" placeholder="请输入下方验证码" name="code" id="r_code">
+                            </div>
+                        <span style="font-size: 24px;font-weight: bolder" id="code">&nbsp;{{ code }}</span> <br><button onclick="cd()">刷新</button>
+                            <span style="font-size: 22px;font-weight: bolder;color: red" id="msg1">&nbsp;</span>
+
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="button" id="register_btn">注册</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="" method="post">
+                        {% csrf_token %}
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="text" placeholder="" name="email" id="l_email">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="" name="password" id="l_password">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="button" id="l_login">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <span style="font-size: 22px;font-weight: bolder;color: red" id="msg2">&nbsp;</span>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<!-- banner start --> 
+		<div id="banner" class="banner">
+			<div class="banner-image" ></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">					 
+						<div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+{#								<h1>ddddd</h1>#}
+								<h3 class="padding-top30" style="color: whitesmoke;">You can't change the past.</h3>
+								<div class="padding-top60 contact-form">
+									<a class="btn cta-button" href="" style="font-size: 22px;color: #FFC400">进入时域</a>
+								</div>
+                            <h3 class="padding-top30" style="color: wheat;font-size: 18px;" id="count">Total-All：{{ count }}个时域</h3>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+		<section class="hero-caption secPadding">
+
+		<div class="container">
+	
+	<div class="row " style="margin-top: 0px;">
+				<div class="col-sm-12">
+	<h2>网站还没有完成<strong>这一段</strong> - <span>不知道写什么</span> 暂且用文字随便凑个数</h2>
+<p>这些内容也是凑数的，以后想起来再改吧</p>
+ 	</div>
+	
+			</div>
+
+		</div>
+	
+</section>
+
+
+		<!-- footer start --> 
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			<div class="footer section">
+				<div class="container">
+					<h1 class="title text-center" id="contact">反馈建议</h1>
+					<div class="space"></div>
+					<div class="row">
+						
+						<div class="col-sm-6">
+							<div class="footer-content">
+								<form method="POST" role="form" id="footer-form" action="" onSubmit="alert('Thank you for your feedback!');">
+		                                {% csrf_token %}
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="email2">联系方式</label>
+										<input type="text" name="connect" id="connect" class="form-control wow fadeInUp" placeholder="可以不填" />
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="message2">网站建议</label>
+										<textarea name="tip" rows="8" cols="20" id="tip" class="form-control input-message wow fadeInUp"  placeholder="反馈建议" required></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<input type="button" value="Send" class="btn btn-default" id="btn_s">
+                                    <span style="font-size: 22px;font-weight: bolder;color: red" id="msg3">&nbsp;</span>
+								</form>
+								  
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="footer-content">
+								
+
+							<div class="widget-content">
+
+								<p>这一段我也不知道写什么，暂且写点废话，留着以后修改</p><br/>
+
+								<p class="contacts"><i class="fa fa-map-marker"></i>大概放联系地址</p>
+
+								<!-- <p class="contacts"><i class="fa fa-phone"></i> 202-314-1583</p> -->
+
+								<p class="contacts"><i class="fa fa-envelope"></i>联系natee的邮箱: nateeinit@163.com</p>
+
+							
+
+							</div>
+
+						</aside>
+								<ul class="social-links">
+									<li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li> 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+
+			<!-- .subfooter start --> 
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center"><a href="http://www.natee.site/" target="_blank" title="纸飞机">- 纸飞机 -</a><a href="http://www.cssmoban.com/" title="" target="_blank"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="/static/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/modernizr.js"></script>
+		<script type="text/javascript" src="/static/plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="/static/js/index_js/custom.js"></script>
+
+	</body>
+</html><script>
+    $('#register_btn').click(function (e) {
+        e.preventDefault();
+        let email = $('#r_emial').val();
+        let password = $('#r_password').val();
+        let confirm = $('#r_confrim').val();
+        let code = $('#r_code').val();
+        {#$.ajaxSetup({#}
+        {#           data: {csrfmiddlewaretoken: '{{ csrf_token }}' },#}
+        {#      });#}
+        $.ajax({
+           type:'POST',
+           url: '/api/register/',
+           data: {
+             'email': email,
+             'password':password,
+              'r_password':confirm,
+              'code':code
+           },
+           dataType: 'JSON',
+           success: function (data) {
+               location.reload()
+           },
+         });
+    });
+    $('#l_login').click(function (e) {
+        e.preventDefault();
+        let l_email = $('#l_email').val();
+        let l_password = $('#l_password').val();
+        $.ajaxSetup({
+                   data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+              });
+        $.ajax({
+           type:'POST',
+           url: '/login/',
+           data: {
+             'email': l_email,
+             'password':l_password,
+           },
+           dataType: 'JSON',
+           success: function (data) {
+               if(data.status == 200){
+                   location.reload()
+               }else if(data.status ==203){
+                    $('#msg2').text(data.data['error'])
+               }
+           },
+         });
+    });
+    $('#btn_s').click(function (e) {
+        e.preventDefault();
+        let s_connect = $('#connect').val();
+        let s_tip = $('#tip').val();
+        $.ajaxSetup({
+                   data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+              });
+        $.ajax({
+            type: 'POST',
+            url: '/suggest_view/',
+            data: {
+                'connect': s_connect,
+                'tip': s_tip
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if(data.status == 200){
+                    $('#msg3').text('感谢反馈');
+                }else if(data.status == 203){
+                    $('#msg3').text(data.data['error']);
+                }
+            }
+        })
+    });
+    function cd() {
+         $.ajax({
+        type:'GET',
+        url: '/code/',
+        dataType: 'JSON',
+        success:function (data) {
+            if(data.status == 201){
+                $('#code').text(data['code'])
+            }else{
+                console.log('sdfdfdf')
+            }
+        }
+
+    })
+    }
+</script>
